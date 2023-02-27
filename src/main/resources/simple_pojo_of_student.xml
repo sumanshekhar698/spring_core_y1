@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/beans/spring-context.xsd">
+
+
+
+	<bean name="s2" class="spring_core_y.basic.Student">
+		<property name="name">
+			<value>Robin</value>
+		</property>
+
+		<property name="age">
+			<value>21</value>
+		</property>
+	</bean>
+
+	<bean id="s3" name="s3" class="spring_core_y.basic.Student">
+		<property name="name">
+			<value>jane</value>
+		</property>
+
+		<property name="age">
+			<value>24</value>
+		</property>
+	</bean>
+
+
+	<!-- more bean definitions go here -->
+</beans>
+
+<!-- XML, XSLT, XSD -->
