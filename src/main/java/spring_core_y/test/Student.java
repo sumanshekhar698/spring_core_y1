@@ -1,4 +1,4 @@
-package spring_core_y.basic;
+package spring_core_y.test;
 
 public class Student {
 

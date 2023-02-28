@@ -1,0 +1,32 @@
+Internship:
+1. Prefix and Profix
+2. 3 Evils problem
+3. 
+4. Tree
+
+DSA, Devlopment [Tech Stack Java & frameworks], 
+System Design
+
+SPRING
+
+Service Based - Ifosys, Wipro
+Product Based -  Google [Gmail], FB\
+DSA
+
+----------------------------------------------------------------------------------------
+SPRING - Its a java framework Framework of Frameworks
+
+Build Tool:
+dependency management
+pack your compiled code to a deployable file
+Automate simple to complex things
+It also helps in testing your code
+It is useful in integrating with Jenkins for CI CD
+
+Java: Maven(to begin with no need of any languages)
+, gradle(groovy/kotlin)
+Spring is a Design Pattern: 
+
+JS - NPM, npx, Yarn
+
+Py - pip, twine

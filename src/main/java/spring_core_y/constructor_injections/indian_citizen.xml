@@ -2,35 +2,27 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  https://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/beans/spring-context.xsd">
 
 
+	<bean class="spring_core_y.constructor_injections.Aadhar"
+		c:aadharNo="7876788765" c:address="Delhi" c:dob="7:09:2000" name="a1">
 
-	<bean name="s2" class="spring_core_y.basic.Student">
-		<property name="name">
-			<value>Robin</value>
-		</property>
-
-		<property name="age">
-			<value>25</value>
-		</property>
-	</bean>
-
-	<bean id="s3" name="s3" class="spring_core_y.basic.Student">
-		<property name="name">
-			<value>jane</value>
-		</property>
-
-		<property name="age">
-			<value>24</value>
-		</property>
+		<constructor-arg>
+			<value>7898778999</value>
+		</constructor-arg>
+		<constructor-arg value="Delhi" />
+		<constructor-arg>
+			<value>7898778999</value>
+		</constructor-arg>
 	</bean>
 
 
-	<!-- more bean definitions go here -->
+
 </beans>
-
-<!-- XML, XSLT, XSD -->

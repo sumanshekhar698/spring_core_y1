@@ -1,4 +1,4 @@
-package spring_core_y.basic;
+package spring_core_y.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,19 +14,19 @@ public class Main {
 //		System.out.println(s1);
 //		s1 = null;
 
-		String path ="simple_pojo_of_student.xml";
+		String path = "spring_core_y/test/simple_pojo_of_student.xml";
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(path);
 //		
-		Student s2 = (Student)context.getBean("s2");
+		Student s2 = (Student) context.getBean("s2");
 		System.out.println(s2);
 		System.out.println(s2.hashCode());
-		
-		Student s3 = (Student)context.getBean("s3");
+
+		Student s3 = (Student) context.getBean("s3");
 		System.out.println(s3);
 
-		
-		Student s2_ = (Student)context.getBean("s2");//By default Spring uses Singleton Pattern
+		Student s2_ = (Student) context.getBean("s2");// By default Spring uses Singleton Pattern
 		System.out.println(s2_.hashCode());
+
 		context.close();
 	}
 

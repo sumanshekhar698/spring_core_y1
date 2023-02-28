@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/beans/spring-context.xsd">
+
+
+	<bean name="e1"
+		class="spring_core_y.injecting_collections.Employee">
+
+		<property name="name">
+			<value>Michael</value>
+		</property>
+
+		<property name="phones">
+			<list>
+				<value>8889997776</value>
+				<value>8889996786</value>
+				<value>8789755678</value>
+				<null />
+			</list>
+
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Delhi</value>
+				<value>Delhi</value>
+				<value>Kolkata</value>
+				<value>Delhi</value>
+				<value>kashmir</value>
+			</set>
+		</property>
+
+		<property name="general">
+			<props>
+				<prop key="dob">10:18:2020</prop>
+				<prop key="gender">M</prop>
+			</props>
+		</property>
+
+
+		<property name="courseEnrolled">
+			<map>
+				<entry key="FS Java" value="3.5" />
+				<entry key="MERN" value="3" />
+				<entry key="Blockchain" value="4" />
+			</map>
+		</property>
+
+
+	</bean>
+
+</beans>

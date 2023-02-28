@@ -9,17 +9,17 @@
 
 
 
-	<bean name="s2" class="spring_core_y.basic.Student">
+	<bean name="s2" class="spring_core_y.test.Student">
 		<property name="name">
 			<value>Robin</value>
 		</property>
 
 		<property name="age">
-			<value>25</value>
+			<value>41</value>
 		</property>
 	</bean>
 
-	<bean id="s3" name="s3" class="spring_core_y.basic.Student">
+	<bean id="s3" name="s3" class="spring_core_y.test.Student">
 		<property name="name">
 			<value>jane</value>
 		</property>
