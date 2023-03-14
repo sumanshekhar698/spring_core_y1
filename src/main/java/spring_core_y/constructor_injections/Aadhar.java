@@ -8,6 +8,7 @@ public class Aadhar {
 	
 	public Aadhar(int aadharNo, String address, String dob) {
 		super();
+		System.out.println("Aadhar parameterized constructor called");
 		this.aadharNo = aadharNo;
 		this.address = address;
 		this.dob = dob;
@@ -23,6 +24,11 @@ public class Aadhar {
 
 	public String getDob() {
 		return dob;
+	}
+
+	@Override
+	public String toString() {
+		return "Aadhar [aadharNo=" + aadharNo + ", address=" + address + ", dob=" + dob + "]";
 	}
 	
 	

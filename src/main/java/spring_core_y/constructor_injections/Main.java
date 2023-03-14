@@ -6,10 +6,16 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		String path = "spring_core_y/injecting_collections/indian_citizen.xml";
+		String path = "spring_core_y/constructor_injections/indian_citizen.xml";
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(path);
-		context.getBean("e1");
+		Aadhar a1 = (Aadhar)context.getBean("a2");
+		System.out.println(a1);
+		
+		
 
+		
+		IndianCitizen p1 =(IndianCitizen) context.getBean("p1");
+		System.out.println(p1);
 		context.close();
 	}
 

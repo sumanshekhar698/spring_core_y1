@@ -5,6 +5,7 @@ import java.util.List;
 public class IndianCitizen {
 	private String name;
 	private Aadhar aadharCard;
+//	private List<String> phones;
 
 	public String getName() {
 		return name;
@@ -22,26 +23,26 @@ public class IndianCitizen {
 		this.aadharCard = aadharCard;
 	}
 
-	public List<String> getPhones() {
-		return phones;
-	}
+//	public List<String> getPhones() {
+//		return phones;
+//	}
+//
+//	public void setPhones(List<String> phones) {
+//		this.phones = phones;
+//	}
 
-	public void setPhones(List<String> phones) {
-		this.phones = phones;
-	}
-
-	public IndianCitizen(String name, Aadhar aadharCard, List<String> phones) {
+	public IndianCitizen(String name, Aadhar aadharCard) {
 		super();
 		this.name = name;
 		this.aadharCard = aadharCard;
-		this.phones = phones;
+//		this.phones = phones;
 	}
 
-	private List<String> phones;
+
 
 	@Override
 	public String toString() {
-		return "IndianCitizen [name=" + name + ", aadharCard=" + aadharCard + ", phones=" + phones + "]";
+		return "IndianCitizen [name=" + name + ", aadharCard=" + aadharCard + "]";
 	}
 
 }

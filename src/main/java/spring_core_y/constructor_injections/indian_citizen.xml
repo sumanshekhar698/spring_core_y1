@@ -8,21 +8,46 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  https://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
- http://www.springframework.org/schema/beans/spring-context.xsd">
+ http://www.springframework.org/schema/beans/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd
+ ">
 
 
 	<bean class="spring_core_y.constructor_injections.Aadhar"
-		c:aadharNo="7876788765" c:address="Delhi" c:dob="7:09:2000" name="a1">
+		c:address="Delhi" name="a1" c:dob="7:09:2000" c:aadharNo="88765">
+		<!-- <constructor-arg> <value>7898778999</value> </constructor-arg> <constructor-arg 
+			value="Delhi" /> <constructor-arg> <value>7898778999</value> </constructor-arg> -->
+	</bean>
 
+
+	<bean class="spring_core_y.constructor_injections.Aadhar"
+		name="a2">
 		<constructor-arg>
-			<value>7898778999</value>
+			<value>78999</value>
 		</constructor-arg>
-		<constructor-arg value="Delhi" />
+		<constructor-arg value="Varanasi" />
 		<constructor-arg>
-			<value>7898778999</value>
+			<value>7:12:2000</value>
 		</constructor-arg>
 	</bean>
 
+
+	<!-- <util:list list-class="java.util.ArrayList" name="listOfPhonesForp1"> 
+		<value>938383939</value> <value>934343939</value> <value>934333939</value> 
+		</util:list> -->
+
+	<bean name="p1"
+		class="spring_core_y.constructor_injections.IndianCitizen"
+		c:name="Billy" c:aadharCard-ref="a1"></bean>
+	<!-- <bean name="p1"> <constructor-arg> <value>Billy</value> </constructor-arg> 
+		<constructor-arg/> <constructor-arg> <null /> </constructor-arg> </bean> -->
+
+	<bean class="spring_core_y.constructor_injections.Addition"
+		name="adder">
+		<constructor-arg value="40" index="1"/>
+		<constructor-arg value="60" index="0"/>
+	</bean>
 
 
 </beans>
