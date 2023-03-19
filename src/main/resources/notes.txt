@@ -30,3 +30,15 @@ Spring is a Design Pattern:
 JS - NPM, npx, Yarn
 
 Py - pip, twine
+
+
+
+
+
+-----------------------------Jdbc Initial Queries ------------------------------------------
+
+create database springjdbc;
+use springjdbc;
+
+create table student(id int primary key, name varchar(100) not null,
+city varchar(200));
